@@ -1,0 +1,38 @@
+{
+  "name": "Theme Name",
+  "slug": "theme-slug",
+  "version": "1.0.0",
+  "description": "Brief description of this theme.",
+  "author": "Blendwit Tech",
+  "requiredModules": ["pages", "menus", "blogs"],
+  "defaultSettings": {
+    "site_title": "Client Site Name",
+    "site_tagline": "Tagline here",
+    "primary_color": "#4f46e5",
+    "contact_email": "hello@client.com"
+  },
+  "seedData": {
+    "pages": [
+      { "title": "Home", "slug": "home", "content": "", "status": "PUBLISHED" },
+      { "title": "Privacy Policy", "slug": "privacy", "content": "<h1>Privacy Policy</h1><p>Content here.</p>", "status": "PUBLISHED" }
+    ],
+    "menus": [
+      {
+        "name": "Main Nav",
+        "slug": "main-nav",
+        "items": [
+          { "label": "Home", "url": "/", "order": 1 },
+          { "label": "Blog", "url": "/blog", "order": 2 },
+          { "label": "Contact", "url": "/contact", "order": 3 }
+        ]
+      },
+      {
+        "name": "Footer",
+        "slug": "footer",
+        "items": [
+          { "label": "Privacy Policy", "url": "/privacy", "order": 1 }
+        ]
+      }
+    ]
+  }
+}
